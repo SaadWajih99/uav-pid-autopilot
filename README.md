@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project implements a **pitch attitude autopilot** for an Unmanned Aerial Vehicle (UAV) using PID control. The system features complementary filter sensor fusion and Monte Carlo robustness analysis to evaluate controller performance under uncertain conditions.
+# UAV Pitch Attitude Autopilot — PD Control in a PID Framework
+
+This project presents the design and validation in simulation of a pitch attitude autopilot for an Unmanned Aerial Vehicle (UAV) using a PD controller implemented within a PID framework. The integral term was evaluated during controller development but set to zero in the final tuned design because acceptable steady-state behaviour was achieved without it.
 
 ## Key Features
 
