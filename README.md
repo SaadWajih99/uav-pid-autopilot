@@ -45,10 +45,22 @@ The final filtered feedback case satisfied the overshoot, settling-time, and ste
 | Raw Accelerometer | 4.60 | 8.91 | 1.81e-03 | 1.90 |
 | Gyro Only | 0.00 | -- | 1.16e-02 | 2.21 |
 | Filtered | 0.96 | 3.44 | 1.62e-03 | 2.18 |
+### Closed-Loop Response Comparison
 
+This figure compares pitch response for Ideal, Raw Accelerometer, Gyro Only, and Filtered feedback configurations. The goal is to show the impact of sensor noise and the benefit of the complementary filter. The filtered response closely matches the ideal case while remaining stable.
+
+<div align="center">
+
+![Closed-Loop Pitch Response Comparison](response_plot.png)
+
+*Closed-loop pitch response under different feedback configurations*
+
+</div>
 ### Monte Carlo Robustness (100 trials)
 
 | Metric | Mean | Std Dev | Min | Max |
+
+
 |---|---:|---:|---:|---:|
 | Overshoot (%) | 0.83 | 0.53 | 0.00 | 2.30 |
 | Settling Time (s) | 3.58 | 0.59 | 3.28 | 7.94 |
